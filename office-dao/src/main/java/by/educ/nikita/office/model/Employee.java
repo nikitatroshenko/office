@@ -1,6 +1,7 @@
 package by.educ.nikita.office.model;
 
 import java.util.HashSet;
+import java.util.Objects;
 import java.util.Set;
 
 public class Employee {
@@ -44,6 +45,9 @@ public class Employee {
     }
 
     public Set<Training> getTrainings() {
+        if (trainings == null) {
+            trainings = new HashSet<>();
+        }
         return trainings;
     }
 
@@ -51,4 +55,20 @@ public class Employee {
         trainings = pTrainings;
     }
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Employee)) return false;
+        Employee employee = (Employee) o;
+        return id == employee.id &&
+                Objects.equals(firstName, employee.firstName) &&
+                Objects.equals(lastName, employee.lastName) &&
+                Objects.equals(email, employee.email) &&
+                Objects.equals(trainings, employee.trainings);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id, firstName, lastName, email, trainings);
+    }
 }

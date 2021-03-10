@@ -8,9 +8,9 @@ public class DAOFactoryTest {
      * @param args
      */
     public static void main(String[] args) {
-        DAOFactory mySQLDAOFactory = DAOFactory.getDAOFactory(DAOFactory.MYSQL);
-        EmployeeDAO employee = mySQLDAOFactory.getEmpoyeeDAO();
-        System.out.println(employee.selectEmployees().size());
+//        DAOFactory mySQLDAOFactory = DAOFactory.getDAOFactory(DAOFactory.MYSQL);
+//        EmployeeDAO employee = mySQLDAOFactory.getEmpoyeeDAO();
+//        System.out.println(employee.selectEmployees().size());
     }
 
 }

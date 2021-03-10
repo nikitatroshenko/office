@@ -93,7 +93,7 @@ public class EmployeeMySQLDAO implements EmployeeDAO {
      *
      * @see by.educ.nikita.office.dao.EmployeeDAO#updateEmployee(java.lang.String)
      */
-    public boolean updateEmployee(String pEmployeeId) {
+    public boolean updateEmployee(Employee employee) {
         // TODO Auto-generated method stub
         return false;
     }

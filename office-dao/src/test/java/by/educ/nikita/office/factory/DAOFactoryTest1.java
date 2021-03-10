@@ -12,9 +12,9 @@ public class DAOFactoryTest1 {
      * @param args
      */
     public static void main(String[] args) {
-        DAOFactory mySQLDAOFactory = DAOFactory.getDAOFactory(DAOFactory.MYSQL);
-        EmployeeDAO employee = mySQLDAOFactory.getEmpoyeeDAO();
-        logger.debug("Total Records Count:" + employee.selectEmployees().size());
+//        DAOFactory mySQLDAOFactory = DAOFactory.getDAOFactory(DAOFactory.MYSQL);
+//        EmployeeDAO employee = mySQLDAOFactory.getEmpoyeeDAO();
+//        logger.debug("Total Records Count:" + employee.selectEmployees().size());
     }
 
 }
