@@ -1,12 +1,10 @@
 package by.educ.nikita.office.factory;
 
-import by.educ.nikita.office.dao.EmployeeDAO;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
+import org.apache.log4j.Logger;
 
 public class DAOFactoryTest1 {
 
-    static Logger logger = LogManager.getLogger(DAOFactoryTest1.class.getName());
+    static Logger logger = Logger.getLogger(DAOFactoryTest1.class.getName());
 
     /**
      * @param args

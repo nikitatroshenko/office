@@ -9,17 +9,15 @@ import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
-
 import by.educ.nikita.office.model.Employee;
 import by.educ.nikita.office.factory.MySQLDAOFactory;
+import org.apache.log4j.Logger;
 
 public class EmployeeMySQLDAO implements EmployeeDAO {
 
     private static final String SQL = "select id, first_name, last_name, email from employee";
     // logger for the class
-    static Logger logger = LogManager.getLogger(EmployeeMySQLDAO.class);
+    static Logger logger = Logger.getLogger(EmployeeMySQLDAO.class);
 
     public EmployeeMySQLDAO() {
 
