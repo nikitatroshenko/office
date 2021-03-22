@@ -22,6 +22,8 @@
         <module>office-dao-api</module>
         <module>office-service-api</module>
         <module>office-service-impl</module>
+        <module>office-dao-hibernate</module>
+
     </modules>
 
     <build>

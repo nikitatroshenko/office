@@ -1,0 +1,14 @@
+<persistence xmlns="http://xmlns.jcp.org/xml/ns/persistence" version="2.2">
+    <persistence-unit name="nc_be_office">
+        <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+
+        <class>by.educ.nikita.office.model.Employee</class>
+        <class>by.educ.nikita.office.model.Training</class>
+
+        <properties>
+            <property name="hibernate.connection.url" value="jdbc:mysql://x0ttgdm9mqocnnjw:ohv2ahuj47megnus@ulsq0qqx999wqz84.chr7pe7iynqr.eu-west-1.rds.amazonaws.com:3306/qhwhq97awqk2amoy"/>
+            <property name="hibernate.connection.driver_class" value="com.mysql.jdbc.Driver"/>
+            <property name="hibernate.hbm2ddl.auto" value="validate"/>
+        </properties>
+    </persistence-unit>
+</persistence>
