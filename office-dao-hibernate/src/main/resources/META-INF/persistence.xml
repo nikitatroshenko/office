@@ -4,6 +4,7 @@
 
         <class>by.educ.nikita.office.model.Employee</class>
         <class>by.educ.nikita.office.model.Training</class>
+        <class>by.educ.nikita.office.model.User</class>
 
         <properties>
             <property name="hibernate.connection.url" value="jdbc:mysql://x0ttgdm9mqocnnjw:ohv2ahuj47megnus@ulsq0qqx999wqz84.chr7pe7iynqr.eu-west-1.rds.amazonaws.com:3306/qhwhq97awqk2amoy"/>

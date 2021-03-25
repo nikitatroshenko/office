@@ -9,6 +9,7 @@ import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
+import javax.persistence.OneToOne;
 import javax.persistence.Table;
 import java.util.HashSet;
 import java.util.Objects;
@@ -35,6 +36,9 @@ public class Employee {
             inverseJoinColumns = {@JoinColumn(name = "training_id")}
     )
     private Set<Training> trainings = new HashSet<>();
+    @OneToOne(fetch = FetchType.EAGER)
+    @JoinColumn(name = "user_id")
+    private User user;
 
     public int getId() {
         return id;
@@ -77,6 +81,14 @@ public class Employee {
 
     public void setTrainings(Set<Training> pTrainings) {
         trainings = pTrainings;
+    }
+
+    public User getUser() {
+        return user;
+    }
+
+    public void setUser(User user) {
+        this.user = user;
     }
 
     @Override
