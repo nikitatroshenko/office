@@ -23,7 +23,7 @@
         <module>office-service-api</module>
         <module>office-service-impl</module>
         <module>office-dao-hibernate</module>
-
+        <module>office-webapp</module>
     </modules>
 
     <build>
