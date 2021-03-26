@@ -23,7 +23,9 @@ If you want to use PowerShell on Windows then your command will be little bit mo
     (Get-Content .\apache-tomcat-9.0.44.zip.sha512).Split(" ")[0].ToUpper().Equals((Get-FileHash -Path .\apache-tomcat-9.0.44.zip -Algorithm SHA512).Hash)
 ```
 
-Unzip your distribution to a convenient place on the disk (I used C:\Tools for Windows or /opt Linux). Note that after unzip your distribution should reside in its own directory (apache-tomcat-<VERSION> by convention)
+# Install Tomcat
+
+Unzip your distribution to a convenient place on the disk (I used C:\Tools for Windows or /opt Linux). Note that after unzip your distribution should reside in its own directory (`apache-tomcat-<VERSION>` by convention)
 
 Open terminal/command line. Now you need to set up environment variables (use your locations)
 
@@ -41,6 +43,8 @@ Go to bin directory and give it a try :)
 ```
 
 Use `Ctrl+C` to stop tomcat
+
+# Deploy an app
 
 Generate new maven module with WebApplication:
 
