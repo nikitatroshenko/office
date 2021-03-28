@@ -63,7 +63,7 @@ public class MySQLDAOFactory extends DAOFactory {
 //		}
 //		return daoFactory;
 //	}
-    public EmployeeDAO getEmpoyeeDAO() {
+    public EmployeeDAO getEmployeeDAO() {
         return new EmployeeMySQLDAO();
     }
 

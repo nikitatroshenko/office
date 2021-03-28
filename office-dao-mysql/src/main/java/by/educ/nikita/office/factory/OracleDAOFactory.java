@@ -14,7 +14,7 @@ public class OracleDAOFactory extends DAOFactory {
      * @see by.educ.nikita.office.factory.DAOFactory#getEmpoyeeDAO()
      */
     @Override
-    public EmployeeDAO getEmpoyeeDAO() {
+    public EmployeeDAO getEmployeeDAO() {
         // TODO Auto-generated method stub
         return null;
     }
