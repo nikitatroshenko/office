@@ -3,8 +3,9 @@ package by.educ.nikita.office.factory;
 
 import by.educ.nikita.office.dao.EmployeeDAO;
 import by.educ.nikita.office.dao.TrainingDAO;
+import by.educ.nikita.office.dao.hibernate.DaoFactory;
 
-public abstract class DAOFactory {
+public abstract class DAOFactory implements DaoFactory {
 
     // List of DAO types supported by the factory
     public static final int MYSQL = 1;
@@ -13,7 +14,7 @@ public abstract class DAOFactory {
     // There will be a method for each DAO that can be
     // created. The concrete factories will have to
     // implement these methods.
-    public abstract EmployeeDAO getEmpoyeeDAO();
+    public abstract EmployeeDAO getEmployeeDAO();
 
     public abstract TrainingDAO getTrainingDAO();
 

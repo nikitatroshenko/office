@@ -13,5 +13,8 @@
     </label>
     <input type="submit" value="Say Hi to me">
 </form>
+<form action="${pageContext.request.contextPath}/employee">
+    <input type="submit" value="View All Employees">
+</form>
 </body>
 </html>
